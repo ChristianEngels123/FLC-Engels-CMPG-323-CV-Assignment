@@ -1,4 +1,4 @@
-header {
+.heading {
 	font-size: 100%;
 }
 
@@ -7,16 +7,47 @@ h1 {
 	font-size: 1.875em;
 }
 
-body {
-	font-size: 100%;
+h2 {
+	font-family: Helvitica, Arial, sans-serif;
+	font-size: 1.5em;
+	text-decoration: underline;
+	margin-top: 5px;
+	margin-bottom: 0px;
 }
 
-.sidenav {
+h3 {
 	font-family: Helvitica, Arial, sans-serif;
+	font-size: 1.3em;
+	margin-top: 5px;
+}
+
+body {
+	font-family: Helvitica, Arial, sans-serif;
+	font-size: 100%;
+	background-color: lightgrey;
+	overflow: auto;
+}
+
+nav {
 	font-size: 1.3em;
 }
 
-button {
-	font-family: Helvitica, Arial, sans-serif;
+button {	
 	font-size: 100%;
+}
+
+div.content {
+	display: block;
+	position: relative;
+	top: 104px;
+	left: 260px;
+	width: 82%;
+	margin: 10px;
+}
+
+div.content div {
+	display: block;
+	border-style: solid;
+	margin: 5px;
+	padding: 5px;
 }

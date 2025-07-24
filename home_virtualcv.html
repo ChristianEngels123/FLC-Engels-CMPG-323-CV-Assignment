@@ -22,15 +22,15 @@
 	
 	<body>
 		<!--Navigation Bar Buttons-->
-		<div class="sidenav">
+		<nav>
 			<!--Image of myself inserted-->
 			<img src="flce_pfp.jpg" alt="Profile Picture">
 			
-			<!---->
+			<!--Links to the Home and Resume Pages with Home set to Active-->
 			<a href="home_virtualcv.html" class="active" title="Return to Home Page" target="_self">Home Page</a>
 			<a href="resume_virtualcv.html" title="Go to Resume Page" target="_self">Resume</a>
 			
-			<!---->
+			<!--Create the Dropdown Button for Projects-->
 			<button class="dropdown-proj">Projects
 				<i class="fa fa-caret-down"></i>
 			</button>
@@ -38,17 +38,17 @@
 				<a href="projects_virtualcv.html" title="Go to Projects Home Page" target="_self">Projects Home</a>
 			</div>
 			
-			<!---->
+			<!--Create the Dropdown Button for Certificates-->
 			<button class="dropdown-cert">Certificates
 				<i class="fa fa-caret-down"></i>
 			</button>
 			<div class="cert-container">
 				<a href="certificates_virtualcv.html" title="Go to Certificates Page" target="_self">Certificates Home</a>
 			</div>
-		</div>
+		</nav>
 		
+		<!--JavaScript to create and animate the Dropdown List for Projects-->
 		<script>
-			<!---->
 			var dropdown = document.getElementsByClassName("dropdown-proj");
 			var i;
 		
@@ -65,8 +65,8 @@
 			}
 		</script>
 		
+		<!--JavaScript to create and animate the Dropdown List for Certificates-->
 		<script>
-			<!---->
 			var dropdown = document.getElementsByClassName("dropdown-cert");
 			var i;
 		
@@ -82,5 +82,19 @@
 				});
 			}
 		</script>
+		
+		<div class="content">
+			<div>
+				<h2>About Me</h2>
+				<h3>Hometown</h3>
+				<p>Hello</p>
+			</div>
+		
+			<div>
+				<h2>Skills</h2>
+				<h3>Coding</h3>
+				<p>Hello</p>
+			</div>
+		</div>
 	</body>
 </html>

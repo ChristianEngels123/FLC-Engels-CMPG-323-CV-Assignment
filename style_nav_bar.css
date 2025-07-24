@@ -1,4 +1,4 @@
-header {
+.heading {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -7,11 +7,14 @@ header {
 	color: white;
 	background-color: grey;
 	text-align: center;
+	border-bottom-style: solid;
+	border-bottom-width: 5px;
+	border-bottom-color: dimgrey;
 }
 
-.sidenav {
+nav {
 	height: 100%;
-	width: 200px;
+	width: 250px;
 	position: fixed;
 	z-index: 1;
 	top: 94px;
@@ -19,19 +22,22 @@ header {
 	background-color: grey;	
 	padding-top: 20px;
 	overflow-x: hidden;
+	border-right-style: solid;
+	border-right-width: 5px;
+	border-right-color: dimgrey;
 }
 
-.sidenav img {
+nav img {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 10px;
-	width: 150px;
-	height: 150px;
+	width: 200px;
+	height: 200px;
 	border-radius: 50%;
 }
 
-.sidenav a, .dropdown-proj, .dropdown-cert {
+nav a, .dropdown-proj, .dropdown-cert {
 	padding: 6px 8px 6px 16px;
 	text-decoration: none;
 	color: black;
@@ -44,12 +50,12 @@ header {
 	outline: none;
 }
 
-.sidenav a:hover:not(.active), .dropdown-proj:hover:not(.dropactive), .dropdown-cert:hover:not(.dropactive) {
+nav a:hover:not(.active), .dropdown-proj:hover:not(.dropactive), .dropdown-cert:hover:not(.dropactive) {
 	background-color: black;
 	color: white;
 }
 
-.sidenav a.active{
+nav a.active{
 	background-color: darkgreen;
 	color: white;
 }
