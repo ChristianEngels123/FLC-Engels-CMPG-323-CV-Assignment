@@ -26,19 +26,48 @@
 			<!--Image of myself inserted-->
 			<img src="flce_pfp.jpg" alt="Profile Picture">
 			
+			<!---->
 			<a href="home_virtualcv.html" class="active" title="Return to Home Page" target="_self">Home Page</a>
 			<a href="resume_virtualcv.html" title="Go to Resume Page" target="_self">Resume</a>
-			<button class="dropdown-btn">Projects
+			
+			<!---->
+			<button class="dropdown-proj">Projects
 				<i class="fa fa-caret-down"></i>
 			</button>
-			<div class="dropdown-container">
+			<div class="proj-container">
 				<a href="projects_virtualcv.html" title="Go to Projects Home Page" target="_self">Projects Home</a>
-			</div>			
-			<a href="certificates_virtualcv.html" title="Go to Certificates Page" target="_self">Certificates</a>
+			</div>
+			
+			<!---->
+			<button class="dropdown-cert">Certificates
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="cert-container">
+				<a href="certificates_virtualcv.html" title="Go to Certificates Page" target="_self">Certificates Home</a>
+			</div>
 		</div>
 		
 		<script>
-			var dropdown = document.getElementsByClassName("dropdown-btn");
+			<!---->
+			var dropdown = document.getElementsByClassName("dropdown-proj");
+			var i;
+		
+			for (i = 0; i < dropdown.length; i++) {
+				dropdown[i].addEventListener("click", function() {
+					this.classList.toggle("dropactive");
+					var dropdownContent = this.nextElementSibling;
+					if (dropdownContent.style.display === "block") {
+						dropdownContent.style.display = "none";
+					} else {
+						dropdownContent.style.display = "block";
+					}
+				});
+			}
+		</script>
+		
+		<script>
+			<!---->
+			var dropdown = document.getElementsByClassName("dropdown-cert");
 			var i;
 		
 			for (i = 0; i < dropdown.length; i++) {

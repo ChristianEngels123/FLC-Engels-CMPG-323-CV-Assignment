@@ -31,7 +31,7 @@ header {
 	border-radius: 50%;
 }
 
-.sidenav a, .dropdown-btn {
+.sidenav a, .dropdown-proj, .dropdown-cert {
 	padding: 6px 8px 6px 16px;
 	text-decoration: none;
 	color: black;
@@ -44,7 +44,7 @@ header {
 	outline: none;
 }
 
-.sidenav a:hover:not(.active), .dropdown-btn:hover:not(.dropactive) {
+.sidenav a:hover:not(.active), .dropdown-proj:hover:not(.dropactive), .dropdown-cert:hover:not(.dropactive) {
 	background-color: black;
 	color: white;
 }
@@ -59,7 +59,12 @@ header {
 	color: white;
 }
 
-.dropdown-container {
+.proj-container {
+	display: none;
+	padding-left: 8px;
+}
+
+.cert-container {
 	display: none;
 	padding-left: 8px;
 }
