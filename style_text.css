@@ -11,7 +11,12 @@ body {
 	font-size: 100%;
 }
 
-nav {
+.sidenav {
 	font-family: Helvitica, Arial, sans-serif;
 	font-size: 1.3em;
+}
+
+button {
+	font-family: Helvitica, Arial, sans-serif;
+	font-size: 100%;
 }

@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="style_nav_bar.css">
 		<link rel="stylesheet" href="style_text.css">
 		<link rel="stylesheet" href="style_animations.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		
 		<!--Browser Tab Title-->
 		<title>FLC Engels-Virtual Resume-Home</title>
@@ -20,13 +21,37 @@
 	</head>
 	
 	<body>
-		<!--Navigation Bar Tabs-->
-		<nav>
+		<!--Navigation Bar Buttons-->
+		<div class="sidenav">
+			<!--Image of myself inserted-->
 			<img src="flce_pfp.jpg" alt="Profile Picture">
+			
 			<a href="home_virtualcv.html" class="active" title="Return to Home Page" target="_self">Home Page</a>
 			<a href="resume_virtualcv.html" title="Go to Resume Page" target="_self">Resume</a>
-			<a href="projects_virtualcv.html" title="Go to Projects Page" target="_self">Projects</a>
+			<button class="dropdown-btn">Projects
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-container">
+				<a href="projects_virtualcv.html" title="Go to Projects Home Page" target="_self">Projects Home</a>
+			</div>			
 			<a href="certificates_virtualcv.html" title="Go to Certificates Page" target="_self">Certificates</a>
-		</nav>
+		</div>
+		
+		<script>
+			var dropdown = document.getElementsByClassName("dropdown-btn");
+			var i;
+		
+			for (i = 0; i < dropdown.length; i++) {
+				dropdown[i].addEventListener("click", function() {
+					this.classList.toggle("dropactive");
+					var dropdownContent = this.nextElementSibling;
+					if (dropdownContent.style.display === "block") {
+						dropdownContent.style.display = "none";
+					} else {
+						dropdownContent.style.display = "block";
+					}
+				});
+			}
+		</script>
 	</body>
 </html>
