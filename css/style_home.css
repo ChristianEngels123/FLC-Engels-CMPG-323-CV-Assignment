@@ -1,0 +1,19 @@
+.home-main {
+	display: block;
+	position: relative;
+	top: 144px;
+	left: 300px;
+	width: 70%;
+	margin: 5px;
+	text-align: justify;
+	padding-bottom: 40px;
+	z-index: -1;
+}
+
+.about {
+	margin-bottom: 30px;
+}
+
+.contact p {
+	line-height: 1.5;
+}

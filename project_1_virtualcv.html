@@ -1,0 +1,83 @@
+<!--FLC Engels 37725068-->
+<!--This the HTML code for the Project 1 Page-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style_nav_bar.css">
+		<link rel="stylesheet" href="css/style_text.css">
+		<link rel="stylesheet" href="css/style_animations.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style_projects.css">
+		
+		<!--Browser Tab Title-->
+		<title>FLC Engels-Virtual Resume-Home</title>
+		
+		<!--Page Heading-->
+		<header>
+			<div class="heading">
+				<h1> Curriculum Vitae of Christian (FLC) Engels </h1>
+			</div>
+		</header>
+	</head>
+	
+	<body>
+		<!--Navigation Bar Buttons-->
+		<nav>
+			<!--Image of myself inserted-->
+			<img src="Images/flce_pfp.jpg" alt="Profile Picture">
+			
+			<!--Links to the Home and Resume Pages with Home set to Active-->
+			<a href="index.html" title="Return to Home Page" target="_self">Home Page</a>
+			<a href="resume_virtualcv.html" title="Go to Resume Page" target="_self">Resume</a>
+			
+			<!--Create the Dropdown Button for Projects-->
+			<button class="dropdown-proj">Projects
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="proj-container">
+				<a href="project_1_virtualcv.html" class="active" title="View Eagle Eye Security" target="_self">Eagle Eye Security</a>
+				<a href="project_2_virtualcv.html" title="View Creative Assignment" target="_self">Creative Assignment</a>
+			</div>
+			
+			<!--Create the Dropdown Button for Certificates-->
+			<button class="dropdown-cert">Certificates
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="cert-container">
+				<a href="certificate_1_virtualcv.html" title="View NSS Certificate" target="_self">NSS Certificate</a>
+				<a href="certificate_2_virtualcv.html" title="View Cyber Security Certificate" target="_self">Cyber Security Certificate</a>
+			</div>
+			
+			<a href="https://www.linkedin.com/in/flc-engels" title="Go to my LinkedIn Profile" target="_blank">LinkedIn Profile</a>
+		</nav>
+		
+		<!--JavaScript to create and animate the Dropdown List for Projects-->
+		<script src="Scripts/project_dropdown.js"></script>
+		
+		<!--JavaScript to create and animate the Dropdown List for Certificates-->
+		<script src="Scripts/certificate_dropdown.js"></script>
+		
+		<section class="project-main">
+			<section class="project">
+				<h2>Eagle Eye Security: CMPG 213 & 223 Project</h2>
+				<p> <img src="Images/Eagle_Eye_Logo.png" alt="Eagle Eye Security Logo">
+					This project was a goup assingment in my 2nd year of B.Sc Information Technology wherein we had to design 
+					a system of out own choosing for a fictional company we would create. The group consistent of 7 people
+					that spent the entire year working on every aspect of the system design phase and the building of the functioning program.
+				</p>
+				<p id="proj-1">
+					List...
+				</p>				
+				<h2>Links</h2>
+				<p>
+					Follow this link to visit the GitHub Repository where the source code for the projects is available:<br>
+					<a href="https://github.com/CMPG223-EagleEyeSecurity/CMPG223FinalGroup17" title="Visit the GitHub Repository where this program can be viewed." target="_blank">Eagle Eye Security GitHub Repository</a>
+				</p>
+			</section>
+		</section>
+		
+		<script src="Projects/proj_1.js"></script>
+		<script src="Projects/load_project_1.js"></script>
+	</body>
+</html>

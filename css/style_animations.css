@@ -1,0 +1,20 @@
+@keyframes img_border {
+  0%   {border-color:#262626 #404040 #404040 #404040;}
+  12.5%  {border-color:#404040 #262626 #404040 #404040;}
+  25%   {border-color:#404040 #404040 #262626 #404040;}
+  37.5%  {border-color:#404040 #404040 #404040 #262626;}
+  50% {border-color:#262626 #404040 #404040 #404040;}
+  62.5%   {border-color:#404040 #262626 #404040 #404040;}
+  75%  {border-color:#404040 #404040 #262626 #404040;}
+  87.5%   {border-color:#404040 #404040 #404040 #262626;}
+  100%  {border-color:#262626 #404040 #404040 #404040;}
+}
+
+nav img {
+	border-style: solid;
+	border-width: 5px;
+	border-color: #262626 #404040 #404040 #404040;
+	animation-name: img_border;
+	animation-duration: 0.7s;
+	animation-iteration-count: infinite;
+}
