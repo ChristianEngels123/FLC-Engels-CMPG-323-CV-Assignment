@@ -5,11 +5,11 @@
 	width: 100%;
 	padding: 10px;
 	color: white;
-	background-color: grey;
+	background-color: #004d00;
 	text-align: center;
 	border-bottom-style: solid;
 	border-bottom-width: 5px;
-	border-bottom-color: dimgrey;
+	border-bottom-color: #003300;
 }
 
 nav {
@@ -19,12 +19,12 @@ nav {
 	z-index: 1;
 	top: 94px;
 	left: 0;
-	background-color: grey;	
+	background-color: #004d00;	
 	padding-top: 20px;
 	overflow-x: hidden;
 	border-right-style: solid;
 	border-right-width: 5px;
-	border-right-color: dimgrey;
+	border-right-color: #003300;
 }
 
 nav img {
@@ -56,12 +56,12 @@ nav a:hover:not(.active), .dropdown-proj:hover:not(.dropactive), .dropdown-cert:
 }
 
 nav a.active{
-	background-color: darkgreen;
+	background-color: green;
 	color: white;
 }
 
 .dropactive {
-	background-color: green;
+	background-color: forestgreen;
 	color: white;
 }
 
