@@ -1,5 +1,5 @@
 <!--FLC Engels 37725068-->
-<!--This the HTML code for the Home Page-->
+<!--This the HTML code for the Project 2 Page-->
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -8,7 +8,7 @@
 		<link rel="stylesheet" href="css/style_text.css">
 		<link rel="stylesheet" href="css/style_animations.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="css/style_home.css">
+		<link rel="stylesheet" href="css/style_projects.css">
 		
 		<!--Browser Tab Title-->
 		<title>FLC Engels-Virtual Resume-Home</title>
@@ -28,7 +28,7 @@
 			<img src="Images/flce_pfp.jpg" alt="Profile Picture">
 			
 			<!--Links to the Home and Resume Pages with Home set to Active-->
-			<a href="home_virtualcv.html" class="active" title="Return to Home Page" target="_self">Home Page</a>
+			<a href="index.html" title="Return to Home Page" target="_self">Home Page</a>
 			<a href="resume_virtualcv.html" title="Go to Resume Page" target="_self">Resume</a>
 			
 			<!--Create the Dropdown Button for Projects-->
@@ -36,7 +36,8 @@
 				<i class="fa fa-caret-down"></i>
 			</button>
 			<div class="proj-container">
-				<a href="project_home_virtualcv.html" title="Go to Projects Home Page" target="_self">Projects Home</a>
+				<a href="project_1_virtualcv.html" title="View Eagle Eye Security" target="_self">Eagle Eye Security</a>
+				<a href="project_2_virtualcv.html" class="active" title="View Creative Assignment" target="_self">Creative Assignment</a>
 			</div>
 			
 			<!--Create the Dropdown Button for Certificates-->
@@ -44,7 +45,8 @@
 				<i class="fa fa-caret-down"></i>
 			</button>
 			<div class="cert-container">
-				<a href="certificates_virtualcv.html" title="Go to Certificates Page" target="_self">Certificates Home</a>
+				<a href="certificate_1_virtualcv.html" title="View NSS Certificate" target="_self">NSS Certificate</a>
+				<a href="certificate_2_virtualcv.html" title="View NSS Certificate" target="_self">NSS Certificate</a>
 			</div>
 			
 			<a href="https://www.linkedin.com/in/flc-engels" title="Go to my LinkedIn Profile" target="_blank">LinkedIn Profile</a>
@@ -56,25 +58,26 @@
 		<!--JavaScript to create and animate the Dropdown List for Certificates-->
 		<script src="Scripts/certificate_dropdown.js"></script>
 		
-		<main class="home-main">
-			<section class="about">
-				<h2>About Me</h2>
-				<p id="about-me">
-					Loading About Me Content...
+		<section class="project-main">
+			<section class="project">
+				<h2>Eagle Eye Security: CMPG 213 & 223 Project</h2>
+				<p> 
+					This project was an individual assingment from my 1st year of B.Sc Information Technology. In this assignment we were tasked to design 
+					an application in C++ to showcase everything that we had learned during the semester. I decided to create a text-based, RPG style turn-based game.
+					In this game you, as the player, are tasked with escaping a dungeon, but in order to do so you must defeat 5 different enemies.
 				</p>
-			</section>
-		
-			<section class="contact">
-				<h2>Contact Information</h2>
+				<p id="proj-2">
+					List...
+				</p>				
+				<h2>Links</h2>
 				<p>
-					Cellphone number: <a href="tel:+835498096">+83 549 8096<a/><br>
-					Student Email address: <a href="mailto:37725068@mynwu.ac.za">37725068@mynwu.ac.za</a><br>
-					Personal Email address: <a href="mailto:christian.flce@gmail.com">christian.flce@gmail.com</a>
+					Follow this link to visit the GitHub Repository where the source code for the projects is available:<br>
+					<a href="https://github.com/CMPG223-EagleEyeSecurity/CMPG223FinalGroup17" title="Visit the GitHub Repository where this program can be viewed." target="_blank">Eagle Eye Security GitHub Repository</a>
 				</p>
 			</section>
-		<main>
+		</section>
 		
-		<script src="about/about_me.js"></script>
-		<script src="about/load_about_me.js"></script>
+		<script src="Projects/proj_2.js"></script>
+		<script src="Projects/load_project_2.js"></script>
 	</body>
 </html>
