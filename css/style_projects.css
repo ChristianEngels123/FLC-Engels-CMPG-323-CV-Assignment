@@ -1,0 +1,48 @@
+.project-main {
+	display: block;
+	position: relative;
+	top: 144px;
+	left: 300px;
+	width: 70%;
+	margin: 5px;
+	text-align: justify;
+	padding-bottom: 40px;
+	z-index: -1;
+	
+}
+
+.project-1 {
+	margin-bottom: 30px;	
+}
+
+.project-1 img {
+	display: block;
+	position: absolute;
+	top: 0px;
+	right: 5px;
+	width: 15%;
+	height: auto;
+	margin-top: 0;
+}
+
+.project-1 p {
+	line-height: 1.5;
+}
+
+.project-2 {
+	margin-bottom: 30px;	
+}
+
+.project-2 img {
+	display: block;
+	position: absolute;
+	top: 0px;
+	right: 5px;
+	width: 15%;
+	height: auto;
+	margin-top: 0;
+}
+
+.project-2 p {
+	line-height: 1.7;
+}
