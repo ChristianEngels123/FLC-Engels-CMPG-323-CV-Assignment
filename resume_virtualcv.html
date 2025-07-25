@@ -1,0 +1,61 @@
+<!--FLC Engels 37725068-->
+<!--This the HTML code for the Resume Page-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style_nav_bar.css">
+		<link rel="stylesheet" href="css/style_text.css">
+		<link rel="stylesheet" href="css/style_animations.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style_resume.css">
+		
+		<!--Browser Tab Title-->
+		<title>FLC Engels-Virtual Resume-Home</title>
+		
+		<!--Page Heading-->
+		<header>
+			<div class="heading">
+				<h1> Curriculum Vitae of Christian (FLC) Engels </h1>
+			</div>
+		</header>
+	</head>
+	
+	<body>
+		<!--Navigation Bar Buttons-->
+		<nav>
+			<!--Image of myself inserted-->
+			<img src="Images/flce_pfp.jpg" alt="Profile Picture">
+			
+			<!--Links to the Home and Resume Pages with Home set to Active-->
+			<a href="home_virtualcv.html" title="Return to Home Page" target="_self">Home Page</a>
+			<a href="resume_virtualcv.html" class="active" title="Go to Resume Page" target="_self">Resume</a>
+			
+			<!--Create the Dropdown Button for Projects-->
+			<button class="dropdown-proj">Projects
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="proj-container">
+				<a href="projects_virtualcv.html" title="Go to Projects Home Page" target="_self">Projects Home</a>
+			</div>
+			
+			<!--Create the Dropdown Button for Certificates-->
+			<button class="dropdown-cert">Certificates
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="cert-container">
+				<a href="certificates_virtualcv.html" title="Go to Certificates Page" target="_self">Certificates Home</a>
+			</div>
+		</nav>
+		
+		<!--JavaScript to create and animate the Dropdown List for Projects-->
+		<script src="Scripts/project_dropdown.js"></script>
+		
+		<!--JavaScript to create and animate the Dropdown List for Certificates-->
+		<script src="Scripts/certificate_dropdown.js"></script>
+		
+		<main class="cv">
+			<img src="Documents/flce_cv.jpg" alt="Curriculum Vitae">
+		</main>
+	</body>
+</html>

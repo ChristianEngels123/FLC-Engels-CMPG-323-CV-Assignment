@@ -25,7 +25,7 @@ body {
 	font-family: Helvitica, Arial, sans-serif;
 	font-size: 100%;
 	background-color: #ccffcc;
-	overflow: auto;
+	overflow: vertical;
 }
 
 nav {
