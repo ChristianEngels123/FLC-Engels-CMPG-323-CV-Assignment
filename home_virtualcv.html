@@ -4,10 +4,11 @@
 <html lang="en">
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="style_nav_bar.css">
-		<link rel="stylesheet" href="style_text.css">
-		<link rel="stylesheet" href="style_animations.css">
+		<link rel="stylesheet" href="css/style_nav_bar.css">
+		<link rel="stylesheet" href="css/style_text.css">
+		<link rel="stylesheet" href="css/style_animations.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style_home.css">
 		
 		<!--Browser Tab Title-->
 		<title>FLC Engels-Virtual Resume-Home</title>
@@ -24,7 +25,7 @@
 		<!--Navigation Bar Buttons-->
 		<nav>
 			<!--Image of myself inserted-->
-			<img src="flce_pfp.jpg" alt="Profile Picture">
+			<img src="Images/flce_pfp.jpg" alt="Profile Picture">
 			
 			<!--Links to the Home and Resume Pages with Home set to Active-->
 			<a href="home_virtualcv.html" class="active" title="Return to Home Page" target="_self">Home Page</a>
@@ -48,47 +49,29 @@
 		</nav>
 		
 		<!--JavaScript to create and animate the Dropdown List for Projects-->
-		<script>
-			var dropdown = document.getElementsByClassName("dropdown-proj");
-			var i;
-		
-			for (i = 0; i < dropdown.length; i++) {
-				dropdown[i].addEventListener("click", function() {
-					this.classList.toggle("dropactive");
-					var dropdownContent = this.nextElementSibling;
-					if (dropdownContent.style.display === "block") {
-						dropdownContent.style.display = "none";
-					} else {
-						dropdownContent.style.display = "block";
-					}
-				});
-			}
-		</script>
+		<script src="Scripts/project_dropdown.js"></script>
 		
 		<!--JavaScript to create and animate the Dropdown List for Certificates-->
-		<script>
-			var dropdown = document.getElementsByClassName("dropdown-cert");
-			var i;
+		<script src="Scripts/certificate_dropdown.js"></script>
 		
-			for (i = 0; i < dropdown.length; i++) {
-				dropdown[i].addEventListener("click", function() {
-					this.classList.toggle("dropactive");
-					var dropdownContent = this.nextElementSibling;
-					if (dropdownContent.style.display === "block") {
-						dropdownContent.style.display = "none";
-					} else {
-						dropdownContent.style.display = "block";
-					}
-				});
-			}
-		</script>
+		<main class="home-main">
+			<section class="about">
+				<h2>About Me</h2>
+				<p id="about-me">
+					Loading About Me Content...
+				</p>
+			</section>
 		
-		<section class="about">
-			<h2>About Me</h2>
-			<p id="about-me">
-				Loading About Me Content...
-			</p>
-		</section>
+			<section class="contact">
+				<h2>Contact Information</h2>
+				<p>
+					Cellphone number: <i>083 549 8096</i><br>
+					Student Email address: <a href="37725068@mynwu.ac.za">37725068@mynwu.ac.za</a><br>
+					Personal Email address: <a href="christian.flce@gmail.com">christian.flce@gmail.com</a>
+				</p>
+			</section>
+		<main>
+		
 		<script src="about/about_me.js"></script>
 		<script src="about/load_about_me.js"></script>
 	</body>
