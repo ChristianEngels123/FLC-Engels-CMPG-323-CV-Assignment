@@ -1,4 +1,4 @@
-.cv {
+.doc {
 	display: block;
 	position: relative;
 	top: 144px;
@@ -8,7 +8,7 @@
 	padding-bottom: 40px;
 }
 
-.cv img {
+.doc img {
 	display: block;
 	position: relative;
 	max-width: 100%;
